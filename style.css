@@ -1,0 +1,226 @@
+.navbar {
+    padding: 1rem;
+}
+
+.icon h2 {
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-grow: 1; 
+}
+
+.nav-items li {
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(192, 190, 190);
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    display: none; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar .nav-items {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar .navbar-toggler {
+        display: block;
+    }
+
+    .navbar .navbar-collapse {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .dropdown-menu {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-nav .dropdown-item {
+        width: 100%;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .right a {
+        margin: 0 0.5rem;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: none;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .right a {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        color: #6c757d;
+    }
+}
+
+
+p {
+    font-size: 1rem;  
+    line-height: 1.6;
+    margin-bottom: 1.5rem;  
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.horizontal-text {
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 10px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section .heading {
+    margin-top: 20px;
+}
+
+.horizontal-text p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: rgb(212, 203, 203);
+    height: 340px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        font-size: 0.9rem;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .col-lg-4 {
+        margin-bottom: 15px;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+    .horizontal-text p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section .heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .section .heading p {
+        font-size: 1.1rem;
+    }
+
+    .horizontal-text p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        font-size: 0.85rem;
+    }
+
+    .row .col-lg-6 {
+        margin-bottom: 15px;
+    }
+
+    .section .heading h1 {
+        font-size: 1.4rem;
+    }
+
+    .horizontal-text p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    .heading h1, .heading p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
